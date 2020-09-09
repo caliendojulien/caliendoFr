@@ -4,17 +4,14 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon fa-code"></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Caliendo Julien</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Développeur <span className="icon fa-certificate"></span> Administrateur système <span
+          className="icon fa-certificate"></span> Auteur <span className="icon fa-certificate"></span> Formateur
         </p>
       </div>
     </div>
@@ -23,28 +20,28 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('moi')
             }}
           >
-            Intro
+            <span className="icon fa-user-circle"></span> Moi
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('travail')
             }}
           >
-            Work
+            <span className="icon fa-briefcase"></span> Mon travail
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('calendrier')
             }}
           >
-            About
+            <span className="icon fa-calendar"></span> Calendrier
           </button>
         </li>
         <li>
@@ -53,7 +50,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            <span className="icon fa-envelope"></span> Contact
           </button>
         </li>
       </ul>

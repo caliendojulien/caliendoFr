@@ -46,6 +46,7 @@ const Layout = ({ children, location }) => {
             ]}
           >
             <html lang="en" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
           </Helmet>
           {content}
         </>
