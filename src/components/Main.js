@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import javascriptEtAngular from '../images/javascriptEtAngular.jpg'
+import { Link } from 'gatsby'
 
 class Main extends React.Component {
   render() {
@@ -14,6 +15,16 @@ class Main extends React.Component {
         }}
       ></div>
     )
+
+    const styleCalendrier = {
+      border: 0,
+      width: 550,
+      height: 400,
+      frameBorder: 0,
+      scrolling: 'no',
+      display: 'block',
+      margin: 'auto'
+    }
 
     return (
       <div
@@ -30,7 +41,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Qui suis je ?</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic01} alt=""/>
           </span>
           <p>
             Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
@@ -64,7 +75,9 @@ class Main extends React.Component {
         >
           <h2 className="major">Mon travail</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <Link
+              to="https://www.editions-eni.fr/julien-caliendo?utm_source=site&utm_medium=affiliation&utm_campaign=2020-07-JCALIENDO&xtor=AL-3972-JCALIENDO"><img
+              src={javascriptEtAngular} alt="javaScript et Angular aux editions ENI"/></Link>
           </span>
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
@@ -92,18 +105,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Calendrier</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <iframe
+            title="calendrier"
+            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=NTM0a3AwdTFsbjRsNGttYmVtN2JnZzdmMm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showTitle=0"
+            style={styleCalendrier}></iframe>
           {close}
         </article>
 
@@ -118,11 +123,11 @@ class Main extends React.Component {
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name"/>
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="email" id="email"/>
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
@@ -130,10 +135,10 @@ class Main extends React.Component {
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input type="submit" value="Send Message" className="special"/>
               </li>
               <li>
-                <input type="reset" value="Reset" />
+                <input type="reset" value="Reset"/>
               </li>
             </ul>
           </form>
