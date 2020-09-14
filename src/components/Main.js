@@ -8,12 +8,9 @@ import { Link } from 'gatsby'
 class Main extends React.Component {
   render() {
     let close = (
-      <div
-        className="close"
-        onClick={() => {
-          this.props.onCloseArticle()
-        }}
-      ></div>
+      <div className="close" onClick={() => {
+        this.props.onCloseArticle()
+      }}/>
     )
 
     const styleCalendrier = {
@@ -23,7 +20,7 @@ class Main extends React.Component {
       frameBorder: 0,
       scrolling: 'no',
       display: 'block',
-      margin: 'auto'
+      margin: 'auto',
     }
 
     return (
@@ -76,10 +73,9 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Calendrier</h2>
-          <iframe
-            title="calendrier"
-            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=NTM0a3AwdTFsbjRsNGttYmVtN2JnZzdmMm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showTitle=0"
-            style={styleCalendrier}></iframe>
+          <iframe title="calendrier"
+                  src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=NTM0a3AwdTFsbjRsNGttYmVtN2JnZzdmMm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showTitle=0"
+                  style={styleCalendrier}/>
           {close}
         </article>
 
@@ -102,7 +98,7 @@ class Main extends React.Component {
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="4"/>
             </div>
             <ul className="actions">
               <li>
