@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../assets/scss/main.scss'
-import { withPrefix } from 'gatsby'
 import Particles from 'react-particles-js'
 
 const Layout = ({ children, location }) => {
