@@ -4,10 +4,12 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../assets/scss/main.scss'
+import { withPrefix } from 'gatsby'
+import Particles from 'react-particles-js'
 
 const Layout = ({ children, location }) => {
 
-  let content;
+  let content
 
   if (location && location.pathname === '/') {
     content = (
@@ -45,9 +47,10 @@ const Layout = ({ children, location }) => {
               { name: 'keywords', content: 'sample, something' },
             ]}
           >
-            <html lang="fr" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
+            <html lang="fr"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"/>
           </Helmet>
+          <Particles />
           {content}
         </>
       )}

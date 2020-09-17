@@ -4,14 +4,14 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-code"></span>
+      <span className="icon fa-code"/>
     </div>
     <div className="content">
       <div className="inner">
         <h1>Caliendo Julien</h1>
         <p>
-          Développeur <span className="icon fa-certificate"></span> Administrateur système <span
-          className="icon fa-certificate"></span> Auteur <span className="icon fa-certificate"></span> Formateur
+          Développeur <span className="icon fa-certificate"/> Administrateur système <span
+  className="icon fa-certificate"/> Auteur <span className="icon fa-certificate"/> Formateur
         </p>
       </div>
     </div>
@@ -23,7 +23,7 @@ const Header = props => (
               props.onOpenArticle('moi')
             }}
           >
-            <span className="icon fa-user-circle"></span> Moi
+            <span className="icon fa-user-circle"/> Moi
           </button>
         </li>
         <li>
@@ -32,7 +32,7 @@ const Header = props => (
               props.onOpenArticle('travail')
             }}
           >
-            <span className="icon fa-briefcase"></span> Mon travail
+            <span className="icon fa-briefcase"/> Mon travail
           </button>
         </li>
         <li>
@@ -41,7 +41,7 @@ const Header = props => (
               props.onOpenArticle('calendrier')
             }}
           >
-            <span className="icon fa-calendar"></span> Calendrier
+            <span className="icon fa-calendar"/> Calendrier
           </button>
         </li>
         <li>
@@ -50,7 +50,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            <span className="icon fa-envelope"></span> Contact
+            <span className="icon fa-envelope"/> Contact
           </button>
         </li>
       </ul>
