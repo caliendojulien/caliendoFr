@@ -49,7 +49,26 @@ const Layout = ({ children, location }) => {
             <html lang="fr"/>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"/>
           </Helmet>
-          <Particles />
+          <Particles
+            params={{
+              'particles': {
+                'number': {
+                  'value': 50,
+                },
+                'size': {
+                  'value': 3,
+                },
+              },
+              'interactivity': {
+                'events': {
+                  'onhover': {
+                    'enable': true,
+                    'mode': 'repulse',
+                  },
+                },
+              },
+            }}
+          />
           {content}
         </>
       )}
