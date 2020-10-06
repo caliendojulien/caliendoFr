@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+let pourcentageLivre = 0;
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
@@ -55,6 +57,7 @@ const Header = props => (
         </li>
       </ul>
     </nav>
+    <p>Avancement de mon prochain ouvrage : {pourcentageLivre}% </p>
   </header>
 )
 
