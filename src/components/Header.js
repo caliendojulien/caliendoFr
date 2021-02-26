@@ -57,7 +57,7 @@ const Header = props => (
         </li>
       </ul>
     </nav>
-    <p>Avancement de mon prochain ouvrage : {pourcentageLivre}% </p>
+    <p>Avancement de mon CA 2021 : {pourcentageLivre}% </p>
   </header>
 )
 
