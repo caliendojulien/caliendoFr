@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-let pourcentageCA = Math.round((1520 + 4900 + 2450 + 2250 + 2150 + (430 * 5) + 4500 + 1800 + 3870 + 3870 + 2450 + 4300) / 70000 * 100)
+let pourcentageCA = Math.round((1520 + 4900 + 2450 + 2250 + 2150 + (430 * 5) + 4500 + 1800 + 3870 + 3870 + 2450 + 4300 + 1800) / 70000 * 100)
 
 
 const Header = props => (
