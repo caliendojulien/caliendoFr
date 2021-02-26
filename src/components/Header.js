@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-let pourcentageLivre = 0;
+let pourcentageCA = Math.round((1520 + 4900 + 2450 + 2250 + 2150 + (430 * 5) + 4500 + 1800 + 3870 + 3870 + 2450 + 4300) / 70000 * 100)
+
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -13,7 +14,7 @@ const Header = props => (
         <h1>Caliendo Julien</h1>
         <p>
           Développeur <span className="icon fa-certificate"/> Administrateur système <span
-  className="icon fa-certificate"/> Auteur <span className="icon fa-certificate"/> Formateur
+          className="icon fa-certificate"/> Auteur <span className="icon fa-certificate"/> Formateur
         </p>
       </div>
     </div>
@@ -57,7 +58,11 @@ const Header = props => (
         </li>
       </ul>
     </nav>
-    <p>Avancement de mon CA 2021 : {pourcentageLivre}% </p>
+    <p>
+      <progress id="progression" max="100" value={pourcentageCA}/>
+      <br/>
+      Avancement de mon CA 2021 : {pourcentageCA}%
+    </p>
   </header>
 )
 
