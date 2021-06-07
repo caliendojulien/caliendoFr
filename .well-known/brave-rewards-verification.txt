@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: caliendo.dev
+Token: 1b576625e79995c31c48a2def26dd82239b8291b8ea6bc6a940f0c50aaf08ab3
